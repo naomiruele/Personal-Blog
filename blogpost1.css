@@ -1,0 +1,61 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    background-color: rgba(255,171,0,1);
+
+}
+
+.nav-container{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    margin: auto;
+}
+
+.nav-container a{
+    display: flex;
+    color: blanchedalmond;
+    /* position: relative; */
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    transition: 0.2s ease color;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+.nav-container a:hover{
+    background-color: brown;
+}
+.blog-post-container{
+    display: grid;
+    grid-template-columns: 1000px;
+    grid-auto-rows: 250px;
+    grid-gap: 1rem;
+    padding: 2px 16px;
+    height: 130vh;
+    margin: 0 25%;
+    color: blanchedalmond;
+}
+img{
+    width: 50%;
+    margin:0 20%;
+}
+
+a{
+    text-decoration: none;
+    color:blanchedalmond;
+}
+
+footer{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    margin: auto;
+    color: blanchedalmond;
+}
