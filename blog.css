@@ -5,6 +5,10 @@ body{
 
 }
 
+.full-height {
+    min-height: 100vh; 
+}
+
 .nav-container{
     display: flex;
     justify-content: flex-end;
@@ -34,8 +38,8 @@ body{
 .about{
     display: flex;
     justify-content: center;
-    height: 10vh;
 }
+
 .about-title{
     display: flex;
     width: 100%;
@@ -44,23 +48,27 @@ body{
     align-items: center;
     margin: auto;
 }
-h1{
+.about-title h1{
     display: flex;
     justify-content: center;
-    font-size: 40pt;
+    font-size: 64px;
     align-items: center;
 }
+
+.text-container {
+    padding: 0.5em;
+}
+
 h4{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     color: blanchedalmond;
-    font-size: 18pt;
+    font-size: 28px;
 }
 p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     color: blanchedalmond;
-    font-size: 18pt;
 }
 button{
     display: flex;
@@ -124,4 +132,46 @@ footer{
     align-items: center;
     background-color: brown;
     margin: auto;
+}
+
+/* @media (min-width: 600px) and (max-width: 900px) {
+    .nav-container{
+        width: 25%;
+    }
+} */
+
+@media (max-width: 1070px) {
+    .nav-container {
+        width: 75%;
+    }
+
+    .nav-container a {
+        font-size: 25px;
+    }
+
+    .about-title h1 {
+        font-size: 40px;
+    }
+    
+    h4{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 650px) {
+    .nav-container {
+        width: 100%;
+    }
+
+    .nav-container a {
+        font-size: 20px;
+    }
+
+    .about-title h1 {
+        font-size: 30px;
+    }
+
+    h4{
+        font-size: 18px;
+    }
 }
